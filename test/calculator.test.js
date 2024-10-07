@@ -7,4 +7,10 @@ describe('power washing price calculator', () => {
     test('returns 15 for 100 sqaure feet', () => {
         expect(calculate(100)).toBe(15);
     });
+
+    test('calculates correct price for 1 to 500 square feet', () => {
+        expect(calculate(1)).toBe(0.15);
+        expect(calculate(250)).toBe(37.5);
+        expect(calculate(500)).toBe(75);
+    });
 });
