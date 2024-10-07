@@ -6,7 +6,11 @@ function calculate(squareFeet) {
     if (squareFeet <= 500) {
         return squareFeet * 0.15;
     }
-    return 75 + (squareFeet - 500) * 0.10;
+
+    if (squareFeet <= 1000) {
+        return 75 + (squareFeet - 500) * 0.20;
+    }
+    return 175 + (squareFeet - 1000) * 0.25;
 }
 
 module.exports = calculate;
