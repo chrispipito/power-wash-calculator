@@ -8,7 +8,7 @@ module.exports = {
         'eslint:recommended'
     ],
     parserOptions: {
-        ecmaVersion: 2020,
+        ecmaVersion: 2021,
     },
     rules: {
         // You can add specific rules here
