@@ -6,7 +6,7 @@ jobs:
   list-files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/chockout@v2
+      - uses: actions/checkout@v2
       - name: List files in the repository
         run:
           ls -R
