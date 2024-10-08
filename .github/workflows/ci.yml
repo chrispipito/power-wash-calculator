@@ -24,6 +24,8 @@ jobs:
             ${{ runner.os }}-
       - name: Install dependencies
         run: npm ci
+      - name: Run Linter
+        run: npm run lint
       - name: Run tests
         run: npm test
       - name: List files in the repository
