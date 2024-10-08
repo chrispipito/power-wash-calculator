@@ -1,0 +1,28 @@
+import unittest
+from calculator import calculate
+
+class TestCalculator(unittest.TestCase):
+    def test_negative_square_feet(self):
+        self.assertEqual(calculate(-10), 0)
+
+    def test_minimum_charge(self):
+        self.assertEqual(calculate(10), 25)
+        self.assertEqual(calculate(166), 25)
+
+    def test_167_to_500_square_feet(self):
+        self.assertEqual(calculate(167), 25.05)
+        self.assertEqual(calculate(250), 37.5)
+        self.assertEqual(calculate(500), 75)
+
+    def test_501_to_1000_square_feet(self):
+        self.assertEqual(calculate(501), 75.20)
+        self.assertEqual(calculate(750), 125)
+        self.assertEqual(calculate(1000), 175)
+
+    def test_over_1000_square_feet(self):
+        self.assertEqual(calculate(1001), 175.25)
+        self.assertEqual(calculate(1250), 237.50)
+        self.assertEqual(calculate(1500), 300)
+
+if __name__ == '__main__':
+    unittest.main()
