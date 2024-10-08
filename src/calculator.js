@@ -3,6 +3,12 @@ function calculate(squareFeet) {
         return 0;
     }
 
+    const minimumCharge = 25;
+
+    if (squareFeet <= 166) {
+        return minimumCharge;
+    }
+
     if (squareFeet <= 500) {
         return squareFeet * 0.15;
     }
@@ -12,5 +18,4 @@ function calculate(squareFeet) {
     }
     return 175 + (squareFeet - 1000) * 0.25;
 }
-
 module.exports = calculate;
