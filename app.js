@@ -1,6 +1,6 @@
 function calculatePrice(squareFeet) {
-  // For now, we'll just return a placeholder value
-  return 0;
+  // Use squareFeet in a simple calculation
+  return squareFeet * 0.1;
 }
 
 // Make the function available for testing
