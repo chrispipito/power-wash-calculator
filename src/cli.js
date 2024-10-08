@@ -1,5 +1,7 @@
 const calculate = require('./calculator');
 const readline = require('readline');
+const process = require('process');
+/* eslint-env node */
 
 const rl = readline.createInterface({
     input: process.stdin,

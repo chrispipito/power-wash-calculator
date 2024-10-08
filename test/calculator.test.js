@@ -1,3 +1,4 @@
+/* global describe, test, expect */
 const calculate = require('../src/calculator');
 describe('power washing price calculator', () => {
     test('calculates correct price for 0-500 square feet', () => {
